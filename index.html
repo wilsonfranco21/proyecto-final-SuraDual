@@ -6,6 +6,7 @@
     <title>Prevencion APP</title>
     <link rel="stylesheet" href="./assets/styles/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -18,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -31,6 +32,20 @@
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                   </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown "> 
+                    <a class="nav-link dropdown-toggle" href="#" id="avatar" role="button" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#" id="botonsalir">salir</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mt-2">
+                    <i class="bi bi-person-circle text-white fw-bold mt-5 fs-2"></i>
+                  </li>
+
                 </ul>
               </div>
             </div>
@@ -54,10 +69,43 @@
                 <p>
                     Bienvenido soy DME App
                 </p>
+                <hr>
+                <p class="text-star">Hola Como estas?</p>
+                <p class="text-end text-primary fw-bold">Excelente </p>
+                <div class="textochat">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-8">
+                        <input type="text"class=" form-control my-3"    id="textochat">
+                      </div>
+                      <div class="col-4 mt-2">
+                        <i class="bi bi-send-check fs-3  "></i>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
             </div>
         </div>
             
+        <section class="container-fluid g-0">
+          <div class="row">
+            <div class="col-12 my-5"> 
+              <img src="./assets/img/seguros okkkkk.jpg" alt="foto" class="img-fluid">
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-8">
+              <h3>Título</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est obcaecati assumenda, sequi non perferendis hic perspiciatis beatae id! Temporibus at harum dolorem error eius nihil beatae nobis iusto explicabo laudantium!</p>
+            </div>
+            <div class="col-4">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium distinctio, perspiciatis odit, fugit officiis vel quia minima quod molestias, enim vero vitae iure laboriosam atque. Vero magni ullam tenetur blanditiis?</p>
+            </div>
+          </div>
+        </section>
     </main>
 
     <footer>
