@@ -59,37 +59,32 @@
 
     <main>
         <div class ="banner" >
-          <iframe width="600px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=_tQLPBERE02ODHwzuet1gXpFeTIoUn1PrHc1BlST3WhUM1hRQTlHN1NUS0FMS0JaU0NWRUkxUzcwRi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+          <iframe width="600px" height="600px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=_tQLPBERE02ODHwzuet1gXpFeTIoUn1PrHc1BlST3WhUM1hRQTlHN1NUS0FMS0JaU0NWRUkxUzcwRi4u" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
         </div>
 
-        <button class="btn btn-primary botonchat" id="botonchat" onclick="cambiarCaja()"> Chatea con DME App</button>
-
-       
+        <button class="btn btn-primary botonChat" id="botonchat">Chatea con Leonardo</button>
         <div class="cajaChat" id="cajaChat">
-            <div class="p-4">
-                <h5>DME App</h5>
-                <p>
-                    Bienvenido soy DME App
-                </p>
-                <hr>
-                <p class="text-star">Hola Como estas?</p>
-                <p class="text-end text-primary fw-bold">Excelente </p>
-                <div class="textochat">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-8">
-                        <input type="text"class=" form-control my-3"    id="textochat">
+          <div class="p-4 mensajesChat" id="mensajechat">
+              <!-- Mensajes aquí -->
+              <p class="text-start" id="humano">Hola, ¿cómo estás?</p>
+              <p class="text-end text-primary fw-bold" id="maquina">Muy bien, gracias.</p>
+              
+              <!-- Otros mensajes -->
+          </div>
+          <div class="areaTextoChat">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-9">
+                          <input type="text" class="form-control my-3" id="textochat">
                       </div>
-                      <div class="col-4 mt-2">
-                        <i class="bi bi-send-check fs-3  "></i>
+                      <div class="col-3 mt-3">
+                        <i class="bi bi-arrow-right-square-fill fs-3 botonSend" id="botonSend"></i>
                       </div>
-                    </div>
                   </div>
-                  
-                </div>
-                
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
+
             
         <section class="container-fluid g-0">
           <div class="row">
@@ -172,14 +167,16 @@
                   <a href="https://github.com/wilsonfranco21?tab=repositories" class="btn btn-success">Ir al Sitio</a>
                 </div>
               </div>
-              <div class="row">
-                <div class="col mt-4">
+
+              
+              <div class="row container align-center">
+                <div class="col mt-4 container align-center">
                   
                   <i class="bi bi-tiktok" style="font-size: 3em;" ></i>
                   
                 </div>
                 <div class="col mt-4">
-                  <a href="https://www.tiktok.com/@wilsonfranco800?lang=es" class="btn btn-primary" >Ir al Sitio</a>
+                  <a href="https://www.tiktok.com/@wilsonfranco800?lang=es" class="btn btn-primary" alt="" > Ir al sitio </a>  </a>
                 </div>
               </div>
               <p>© 2024 [DME App]. Todos los derechos reservados. Este sitio web y su contenido están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. Me decidí a estudiar desarrollo web porque me apasionan las nuevas tecnologías aplicadas al desarrollo de soluciones para el sector salud. </p>
@@ -192,10 +189,11 @@
     </footer>
 
 
-
+    <Script src="./src/services/servicio.js"></Script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./src/controllers/controlador.js" type="module"></script>
     <script src="./src/controllers/controladorsalida.js" type="module"></script>
+    <script src="./src/controllers/controladorChat.js" type="module"></script>
 </body>
 </html>

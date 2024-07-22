@@ -1,4 +1,4 @@
-let boton=document.getElementById("botonChat")
+let boton=document.getElementById("botonchat")
 boton.addEventListener("click",function(){
     let cajaChat=document.getElementById("cajaChat")
     if(cajaChat.style.display=="none" || cajaChat.style.display=="")
